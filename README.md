@@ -8,7 +8,7 @@ For this quick demo I replaced the GCC with Zig compiler
 To compile it, use:
 
 ```console
-foo@bar:~$ zig cc -o fizzbuzz.exe src/fizzbuzz.c -target x86_64-windows-gnu
+foo@bar:~$ $ zig cc src/fizzbuzz.c src/main.c -o fizzbuzz.exe -target x86_64-windows-gnu
 
 ```
 

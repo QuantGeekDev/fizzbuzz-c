@@ -1,14 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "fizzbuzz.h"
 
-int main()
+void welcomeMessage()
 {
-  int maxNumber = 100000;
   printf("Welcome to FizzBuzz");
   printf("\n\nPress any key to start");
-  scanf("");
+  scanf("Press Any Key To Start");
+}
 
-  for (int currentNumber = 0; currentNumber < maxNumber; currentNumber++)
+void fizzBuzzLoop(int numberOfIterations)
+{
+  int startingNumber = 1;
+
+  for (int currentNumber = startingNumber; currentNumber < numberOfIterations; currentNumber++)
   {
     if (currentNumber % 3 == 0 && currentNumber % 5 == 0)
     {
@@ -29,6 +34,4 @@ int main()
     }
     printf("\n%d", currentNumber);
   }
-
-  exit(0);
 }
